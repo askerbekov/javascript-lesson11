@@ -1,5 +1,6 @@
 const row = document.querySelector('.row')
 const options = document.querySelector('#options')
+const maps = document.querySelector('#maps')
 // let value = document.querySelector('value')
 
 
@@ -16,9 +17,14 @@ options.addEventListener('change' , value => {
                     <img src=${country.flags.png} alt="">
                     <h3>${country.name.common}</h3>
                     <p>${country.capital}</p>
+                    <p>${country.population}</p>
+                    <a href="${country.maps.googleMaps}" target="_blank"><button id="maps" target="_blank">Maps</button></a>
                     <div/>
                 <div/>
                 `
             })
         })
+    // maps.addEventListener('click' ,event =>{
+    //
+    // })
 })
